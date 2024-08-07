@@ -10,31 +10,35 @@ This project implements a user registration and login system using Java Servlets
 - Database integration (MySQL)
 
 ## Project Structure
-│
-├───build
-│   └───classes
-│       └───com
-│           └───data
-│                   Login.class
-│                   Register_user.class
-│
-└───src
-    └───main
-        ├───java
-        │   └───com
-        │       └───data
-        │               Login.java
-        │               Register_user.java
-        │
-        └───webapp
-            │   login.html
-            │   register.html
-            │
-            ├───META-INF
-            │       MANIFEST.MF
-            │
-            └───WEB-INF
-                └───lib
+```
+└── 📁Registration_Signup_using_Servlets
+    └── .classpath
+    └── .gitignore
+    └── .project
+    └── 📁.settings
+    └── 📁build
+        └── 📁classes
+            └── 📁com
+                └── 📁data
+                    └── Login.class
+                    └── Register_user.class
+    └── README.md
+    └── 📁src
+        └── 📁main
+            └── 📁java
+                └── 📁com
+                    └── 📁data
+                        └── Login.java
+                        └── Register_user.java
+            └── 📁webapp
+                └── login.html
+                └── 📁META-INF
+                    └── MANIFEST.MF
+                └── register.html
+                └── 📁WEB-INF
+                    ├── lib
+```
+
 
 ## Installation
 
