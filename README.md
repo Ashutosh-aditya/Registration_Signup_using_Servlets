@@ -1,4 +1,4 @@
-# Registration and Signing In Project
+# Registration and Signing Using Servlets
 
 This project implements a user registration and login system using Java Servlets. Users can register with their details and subsequently log in using their credentials.
 
