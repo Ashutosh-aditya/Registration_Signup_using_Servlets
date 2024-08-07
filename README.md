@@ -1,6 +1,6 @@
 # Registration and Signing Using Servlets
 
-This project implements a user registration and login system using Java Servlets. Users can register with their details and subsequently log in using their credentials.
+This project implements a user registration and login system using Java Servlets. Users can register with their details and subsequently log in using their credentials.Try it using on eclipse Java-EE-perspective.
 
 ## Features
 
@@ -40,6 +40,7 @@ This project implements a user registration and login system using Java Servlets
 ```
 
 
+
 ## Installation
 
 1. Clone the repository:
@@ -56,21 +57,26 @@ This project implements a user registration and login system using Java Servlets
 
 4. Set up the MySQL database:
     ```sql
-    CREATE DATABASE user_db;
-    USE user_db;
+    CREATE DATABASE users;
+    USE users;
 
-    CREATE TABLE users (
+    CREATE TABLE records (
         id INT NOT NULL AUTO_INCREMENT,
-        username VARCHAR(50) NOT NULL,
-        password VARCHAR(50) NOT NULL,
-        PRIMARY KEY (id)
-    );
+        name VARCHAR(255) NOT NULL,
+        password VARCHAR(255) NOT NULL,
+        phone VARCHAR(20) NOT NULL,
+        age INT NOT NULL,
+        gender ENUM('Male', 'Female') NOT NULL,
+        PRIMARY KEY (id),
+        CONSTRAINT records_chk_1 CHECK ((age > 0))
+    ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
     ```
 
 5. Configure the database connection in your servlets (`Login.java` and `Register_user.java`):
     ```java
     // Example configuration
-    String url = "jdbc:mysql://localhost:3306/user_db";
+    String url = "jdbc:mysql://localhost:3306/users";
     String username = "root";
     String password = "your_password";
     ```
@@ -96,5 +102,6 @@ This project implements a user registration and login system using Java Servlets
 3. Make your changes and commit them (`git commit -m 'Add new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a Pull Request.
+7. Can store password after hashing to add extra layer of Security.
 
 
