@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+body {
+    background-color: lightgrey;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-image:  
+        radial-gradient(circle at 100% 0%, #1690A7 30%, transparent 10%),
+        radial-gradient(circle at 0% 100%, #1690A7 30%, white 25%);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin:auto;
+    max-width: 60%;
+    min-width:40%;
+    border-radius: 2em;
+    vertical-align: middle;
+    margin-top: 5%;
+}
+
+form {
+    width: 80%;
+    min-width:40%;
+    padding: 5%;
+    padding-bottom:2%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    gap: 0.8em;
+    border-radius: 2em;
+    margin-top: 10%;
+    
+}
+
+label,fieldset {
+    margin-bottom: 0em;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover {
+    border-color: #1690A7;
+}
+
+
+input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.submit {
+    background-color: #1690A7;
+    color: white;
+    border: solid 0.1em white;
+    padding: 1em;
+    border-radius: 2em;
+    margin: auto;
+    font-size: large;
+}
+
+fieldset{
+	margin:auto;
+	width: 40%;
+}
+
+.submit:hover {
+    background-color: white;
+    border: solid 0.1em #1690A7;
+    color: #1690A7;
+}
+</style>
+</head>
+<body>
+<div class="form">
+    <form action="Login_user" autocomplete="on" method="post">
+
+        <fieldset>
+        	<legend>Enter Login Credentials</legend>
+        
+        		<label for="name">Name</label><br>
+        		<input type="text" id="name" placeholder="Enter your name" name="name" required>
+        		<br>        	
+        		<label for="password">Password</label><br>
+        		<input type="password" id="password" placeholder="Enter your password" name="password" required>
+        	
+        </fieldset>
+        <input type="submit" value="Login" id="submit" class="submit">
+    </form>
+        <a href="register.html"><button class="submit">register</button></a>
+</div>
+</body>
+</html>

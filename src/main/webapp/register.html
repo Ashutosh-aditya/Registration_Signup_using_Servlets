@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Signup</title>
+<style>
+body {
+    background-color: lightgrey;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-image:  
+        radial-gradient(circle at 100% 0%, #1690A7 30%, transparent 10%),
+        radial-gradient(circle at 0% 100%, #1690A7 30%, white 25%);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin:auto;
+    max-width: 60%;
+    min-width:40%;
+    border-radius: 2em;
+}
+
+form {
+    width: 80%;
+    min-width:40%;
+    padding: 5%;
+    padding-bottom:2%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.1%;
+    gap: 0.8em;
+    border-radius: 2em;
+    
+}
+
+label,fieldset {
+    margin-bottom: 0em;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover {
+    border-color: #1690A7;
+}
+
+
+input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.submit {
+    background-color: #1690A7;
+    color: white;
+    border: solid 0.1em white;
+    padding: 1em;
+    border-radius: 2em;
+    margin: auto;
+    font-size: large;
+}
+
+.submit:hover {
+    background-color: white;
+    border: solid 0.1em #1690A7;
+    color: #1690A7;
+}
+</style>
+</head>
+<body>
+<div class="form">
+    <form action="register_user" autocomplete="on" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" name="password" required>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" name="phone" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" min="1" name="age" required>
+        <fieldset>
+        	<legend>Gender</legend>
+        	<div>
+            	<input type="radio" name="gender" value="Male" required>
+            	<label>Male</label>
+        	</div>
+        	<div>
+            	<input type="radio" name="gender" value="Female">
+            	<label>Female</label>
+        	</div>
+        </fieldset>
+        <input type="submit" value="Register" id="submit" class="submit">
+    </form>
+        <a href="login.html"><button class="submit">Login</button></a>
+</div>
+</body>
+</html>
