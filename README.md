@@ -36,7 +36,7 @@ This project implements a user registration and login system using Java Servlets
                     └── MANIFEST.MF
                 └── register.html
                 └── 📁WEB-INF
-                    ├── lib
+                    └── lib
 ```
 
 
