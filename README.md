@@ -9,6 +9,17 @@ This project implements a user registration and login system using Java Servlets
 - Form validation
 - Database integration (MySQL)
 
+## Screenshots
+
+### Registration Page
+![image](https://github.com/user-attachments/assets/c280c1a9-4324-4f51-8ab6-04847b8f2349)
+
+### Login Page
+![image](https://github.com/user-attachments/assets/90a54d6a-3676-48bc-9855-3c2eb5a99d0d)
+
+
+
+
 ## Project Structure
 ```
 └── 📁Registration_Signup_using_Servlets
